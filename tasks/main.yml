@@ -1,0 +1,3 @@
+---
+  - name: Install ssh keys
+    import_tasks: ssh_keys.yml
