@@ -1,9 +1,10 @@
-# Ansible role - SSH Keys
+# Ansible Role - SSH Keys
 
-Clé privée temporaire encryptée dans ssh/id_ed25519
+Clé privée temporaire encryptée dans `ssh/id_ed25519`
 
-Liste des clés publique dans group_vars/lxc.yml
+Liste des clés publique
 
+### group_vars/lxc.yml
 ```
 keystodeploy:
   - name: Pierre C
@@ -12,6 +13,10 @@ keystodeploy:
     sshkey: ssh-rsa AAAAB3Nz...
 ```
 
+### License
 
+GPLv3 - Elukerio
 
- 
+### Author Information
+
+Pierre Coimbra

@@ -1,6 +1,6 @@
 ---
-  - name: Deploy SSH-Keys to remote host
-    authorized_key:
-      user: root
-      key: "{{ keystodeploy|map(attribute='sshkey')|join('\n') }}"
-      exclusive: true
+- name: ssh keys | deploy SSH-Keys to remote host
+  authorized_key:
+    user: root
+    key: "{{ keystodeploy|map(attribute='sshkey')|join('\n') }}"
+    exclusive: true
