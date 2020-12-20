@@ -1,10 +1,10 @@
 # Ansible Role - SSH Keys
 
-Clé privée temporaire encryptée dans `ssh/id_ed25519`
+Ansible role to import an SSH key ring
 
-Liste des clés publique
+Temporary private key in `ssh/id_ed25519`
 
-### group_vars/lxc.yml
+### Example
 ```
 keystodeploy:
   - name: Pierre C
